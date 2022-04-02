@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Студенты</title>
+  <link href="styles.css" rel="stylesheet">
+</head>
+  <body>
+    <div class="container">
+      <div class="d-flex flex-direction-row justify-space-between">
+        <div class="card">
+          <h2>Список студентов: </h2>
+          <table border="1" id="table">
+            <thead>
+              <tr>
+                <td>Имя студента</td>
+                <td>Пол</td>
+                <td>Дата рождения</td>
+              </tr>
+            </thead>
+            <tbody id="table-students">
+              <tr><td>Алибек</td><td>Мужской</td><td class="birthday">03.03.2001</td></tr>
+            </tbody>
+            <section>
+              <tr><td class="py-4 hide-cell"></td></tr>
+              <tr><td colspan="3" id="average-age">Средний возраст студентов: </td></tr>
+            </section>
+          </table>
+        </div>
+
+        <div class="card">
+          <h2>Форма добавления студента: </h2>
+          <form name="studentForm" onsubmit="return false;">
+            <div class="d-flex column">
+              <span>Имя: </span>
+              <input name="firstName" type="text" size="40" placeholder="Введите Имя студента">
+            </div>
+
+            <div class="d-flex column mt-6">
+              <span>Пол: </span>
+              <select name="sex">
+                <option value="Мужской">Мужской</option>
+                <option value="Женский">Женский</option>
+              </select>
+            </div>
+
+            <div class="d-flex column mt-6">
+              <span>Дата рождения: </span>
+              <input name="birthday" type="date" min="1970-01-01">
+            </div>
+
+            <button onclick="addStudent()" class="mt-6" >Добавить</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

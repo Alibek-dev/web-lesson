@@ -1,0 +1,44 @@
+
+
+.container {
+    padding: 60px 20%;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-direction-row {
+    flex-direction: row;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+#table td {
+    padding: 10px 20px;
+}
+
+.card {
+    margin: 20px;
+    border: 1px dashed darkgrey;
+    padding: 20px;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.mt-6 {
+    margin-top: 24px;
+}
+
+.py-4 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.hide-cell {
+    empty-cells: hide;
+}
